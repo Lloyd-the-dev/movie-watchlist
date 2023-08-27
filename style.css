@@ -30,12 +30,12 @@ body{
 .search-section{
     display: flex;
     align-items: center;
-    gap: none;
+    width: 20%;
 }
 .input-section input{
     padding: 1rem 2rem;
     border: none;
-    margin: none;
+    margin-left: -20px;
 }
 .input-section input:focus{
     outline: none;
