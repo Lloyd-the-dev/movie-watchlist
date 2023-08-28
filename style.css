@@ -4,7 +4,7 @@ body{
     background: #303030;
 }
 .header{
-    background-image: url("./background.png");
+    background-image: url("./images/background.png");
     object-fit: cover;
     width: 50%;
     margin: 3rem auto;
@@ -14,8 +14,15 @@ body{
     color: white;
     padding: 2rem;
 }
-.header p, .header h1{
+.header a, .header h1{
     font-weight: bold;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+#star{
+    color: #FEC654;
 }
 .input-section{
     margin: 0 auto;
@@ -25,17 +32,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 0 0 2rem;
     border-radius: 8px;
 }
 .search-section{
     display: flex;
     align-items: center;
-    width: 20%;
+    gap: none;
+    width: 40%;
 }
 .input-section input{
     padding: 1rem 2rem;
     border: none;
-    margin-left: -20px;
+    margin: none;
+    width: 100%;
+}
+#icon{
+    margin: none;
 }
 .input-section input:focus{
     outline: none;
@@ -46,4 +59,62 @@ body{
     border: none;
     font-weight: bold;
     color: #374151;
+    cursor: pointer;
+    transition: 1s;
+    width: 15%;
+}
+#btn:hover{
+    background-color: #6B7280;
+    color: white;
+}
+#start-section{
+    text-align: center;
+    color: white;
+    margin-top: 6rem;
+}
+#start-section h3{
+    margin-top: 0;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    gap: 2rem;
+    height: 200px;
+    padding: 1rem;
+}
+.poster-img{
+    height: 100%;
+    object-fit: cover;
+}
+.movie-details{
+    width: 80%;
+
+}
+.movie-details-first, .movie-details-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-details-first{
+    width: 70%;
+}
+.movie-details-second{
+    width: 100%;
+}
+.movie-details-second:nth-child(2){
+    width: 70%;
+}
+.plot{
+    margin-left: -0.4rem;
+}
+.watchlist-button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    gap: 0.2rem;
+    cursor: pointer;
 }

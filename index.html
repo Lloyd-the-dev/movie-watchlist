@@ -10,16 +10,21 @@
     <div>
         <header class="header">
             <h1>Find your film</h1>
-            <p>My Watchlist</p>
+            <a href="watchlist.html">My Watchlist</a>
         </header>
         <div class="input-section">
             <div class="search-section"> 
                 <i class='bx bx-search' id="icon"></i>
                 <input type="text" placeholder="Search for a movie" id="input-el">
             </div>  
-            <button id="btn">Search</button>
+            <button id="btn" onclick="search()">Search</button>
         </div>
         <div class="results" id="result"></div>
+        <section id="start-section">
+            <img src="./images/icon.png" alt="">
+            <h3>Start Exploring</h3>
+        </section>
+      
     </div>
 
     <script src="index.js"></script>
